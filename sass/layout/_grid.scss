@@ -2,7 +2,7 @@
             
       .row {
     max-width:$grid-width;
-   
+
     margin: 0 auto;
     
     &:not(:last-child){
@@ -13,9 +13,7 @@
   
     [class^="col-"]{
            
-     
       float: left;
-
       &:not(:last-child){
         margin-right: $gutter-horizontal;
       }
