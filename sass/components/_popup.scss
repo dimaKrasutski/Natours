@@ -1,0 +1,57 @@
+
+.popup{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba($color-black,.6);
+  z-index:9999;
+
+  &__content{
+    @include absCenter;
+
+   width: 75%;
+   
+   box-shadow: 0 2rem 4 rgba($color-black,.2);
+   background-color: $color-white;
+   border-radius: 3px;
+   display: table;
+   overflow: hidden;
+
+  }
+
+  &__left{
+    width: 33.333333333333%;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &__right{
+    width: 66.6666666666666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+
+  }
+  &__img{
+       display: block;
+       width: 100%;
+  }
+  &__text{
+     font-size: 1.4rem;
+     margin-bottom: 4rem;
+
+     column-count: 2; //разбивает текст на две колонки
+     column-gap: 4rem; //делает отступ между колонками
+     column-rule: 3px solid $color-grey-light-2; //линия между колонками
+
+     -moz-column-count: 2; // для MOZILLA
+     -moz-column-gap: 4rem; 
+     -moz-column-rule: 3px solid $color-grey-light-2; 
+
+     hyphens: auto;
+     -moz-hyphens: auto;
+     -ms-hyphens: auto;
+     -webkit-hyphens: auto;
+  }
+}
