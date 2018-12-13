@@ -36,15 +36,12 @@
      }
      &:hover{
        color: $color-primary;
-
      }
   }
   
   &__content{
     @include absCenter;
-
    width: 75%;
-   
    box-shadow: 0 2rem 4 rgba($color-black,.2);
    background-color: $color-white;
    border-radius: 3px;

@@ -1,3 +1,19 @@
+/*
+    Media query manager
+     0-600px: Phone
+     600-900px: Tablet Portrait
+     900-1200px: Tablet Landscape
+     [1220-1800] is where our normal styles apply
+     1800px- ****px:Big Desktop
+ 
+     $breakpoint argument choices:
+     -phone
+     -tablet-portrait
+     -tablet-landscape
+     -big-desktop
+
+      1em = 16px;
+   */
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -617,6 +633,15 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
