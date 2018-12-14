@@ -22,5 +22,11 @@
 
    body{
        box-sizing: border-box;
+       padding: 3rem;
+
+       @include respond(tablet-portrait){  //width < 900?
+         padding: 0;
+       }
+
    }
    
