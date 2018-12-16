@@ -27,6 +27,10 @@
        @include respond(tablet-portrait){  //width < 900?
          padding: 0;
        }
+   }
 
+   ::selection{
+     background-color: $color-primary;
+     color: $color-white;
    }
    
